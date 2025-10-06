@@ -1,0 +1,14 @@
+# config.yaml for vocab building
+data:
+  train_src: data/train_input_char.txt
+  train_tgt: data/train_output_char.txt
+  valid_src: data/dev_input_char.txt
+  valid_tgt: data/dev_output_char.txt
+
+save_data: data/opennmt_char  # preprocessed dataset prefix
+
+src_vocab: data/src_vocab.txt  # where to save source vocab
+tgt_vocab: data/tgt_vocab.txt  # where to save target vocab
+
+# optional: share vocab if you want one for both
+share_vocab: false

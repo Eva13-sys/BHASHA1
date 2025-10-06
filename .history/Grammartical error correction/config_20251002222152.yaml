@@ -1,0 +1,29 @@
+save_data: data/opennmt_char
+
+data:
+  corpus_1:
+    path_src: data/train_input_char.txt
+    path_tgt: data/train_output_char.txt
+    valid_src: data/dev_input_char.txt
+    valid_tgt: data/dev_output_char.txt
+
+src_vocab: data/src_vocab.txt
+tgt_vocab: data/tgt_vocab.txt
+
+src_vocab_size: 1000
+tgt_vocab_size: 1000
+
+model_type: text
+rnn_size: 512
+word_vec_size: 256
+encoder_type: brnn
+decoder_type: rnn
+layers: 2
+dropout: 0.3
+
+batch_size: 64
+optim: adam
+learning_rate: 0.001
+train_steps: 20000
+valid_steps: 1000
+save_checkpoint_steps: 2000
